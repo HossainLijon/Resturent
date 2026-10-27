@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>স্বাদ ঘর | Shad Ghor Restaurant</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#home">স্বাদ <b>ঘর</b></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <ul id="links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <div class="box">
+    <small>AUTHENTIC · FRESH · TASTY</small>
+    <h1>ঐতিহ্যের স্বাদ, <em>ভালোবাসার</em> পরিবেশনা</h1>
+    <p>তাজা উপকরণ, পুরনো রেসিপি আর পরিবারের মতো আপ্যায়ন — স্বাদ ঘরে আপনাকে স্বাগতম।</p>
+    <a class="btn" href="#menu">মেনু দেখুন</a>
+    <a class="btn alt" href="#contact">টেবিল বুক করুন</a>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="title"><span>Our Menu</span><h2>আমাদের বিশেষ খাবার</h2><i></i></div>
+  <div class="tabs">
+    <button class="tab on" data-f="all">সব</button>
+    <button class="tab" data-f="main">মেইন কোর্স</button>
+    <button class="tab" data-f="fast">ফাস্ট ফুড</button>
+    <button class="tab" data-f="fresh">স্যালাড ও ব্রেকফাস্ট</button>
+    <button class="tab" data-f="sweet">ডেজার্ট</button>
+  </div>
+  <div class="grid">
+    <div class="card" data-c="main" style="--c:var(--red)"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>কাচ্চি বিরিয়ানি</h3><p>খাসির মাংস, সুগন্ধি চাল ও আলুবোখারা।</p><span class="price">৳ 380</span></div></div>
+    <div class="card" data-c="main" style="--c:var(--green)"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Grill platter" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>গ্রিল প্লেটার</h3><p>চিকেন গ্রিল, সবজি ও বিশেষ সস।</p><span class="price">৳ 450</span></div></div>
+    <div class="card" data-c="fast" style="--c:var(--saffron)"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>চিজ পিৎজা</h3><p>মোজারেলা চিজ ও তাজা টমেটো সসে।</p><span class="price">৳ 520</span></div></div>
+    <div class="card" data-c="fast" style="--c:var(--red)"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Burger" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>বিফ বার্গার</h3><p>রসালো প্যাটি, চিজ ও ফ্রেশ লেটুস।</p><span class="price">৳ 290</span></div></div>
+    <div class="card" data-c="fresh" style="--c:var(--green)"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Salad" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>ফ্রেশ গার্ডেন স্যালাড</h3><p>মৌসুমি সবজি ও লেবুর ড্রেসিং।</p><span class="price">৳ 220</span></div></div>
+    <div class="card" data-c="fresh" style="--c:var(--saffron)"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Pancakes" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>প্যানকেক ব্রেকফাস্ট</h3><p>মধু, বেরি ও মাখনসহ।</p><span class="price">৳ 260</span></div></div>
+    <div class="card" data-c="sweet" style="--c:var(--red)"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Cake" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>চকলেট কেক</h3><p>নরম, মিষ্টি ও চকলেটে ভরপুর।</p><span class="price">৳ 180</span></div></div>
+    <div class="card" data-c="sweet" style="--c:var(--green)"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Dessert" onerror="this.outerHTML='<div class=ph></div>'"><div class="in"><h3>ক্রিমি ডেজার্ট</h3><p>ঠান্ডা, মিষ্টি ও ফলের টপিংসহ।</p><span class="price">৳ 200</span></div></div>
+  </div>
+  <div class="orderbar"><a class="btn" href="#payment" onclick="alert('অর্ডার করতে নিচের নম্বরে কল করুন বা পেমেন্ট সেকশন দেখুন।')">🛒 Order Now</a></div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <img class="pic" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Restaurant interior" onerror="this.removeAttribute('src')">
+    <div>
+      <div class="title" style="text-align:left;margin:0"><span>About Us</span></div>
+      <h2>আমাদের গল্প</h2>
+      <p>২০১৫ সাল থেকে স্বাদ ঘর প্রতিদিন তাজা উপকরণ আর নিজস্ব মসলার মিশেলে খাবার তৈরি করছে। আমাদের লক্ষ্য একটাই — প্রতিটি অতিথি যেন বাড়ির মতো আপন আর তৃপ্ত হয়ে ফেরেন।</p>
+      <div class="stats">
+        <div><b>10+</b>বছরের অভিজ্ঞতা</div>
+        <div><b>50+</b>পদের খাবার</div>
+        <div><b>20k+</b>খুশি গ্রাহক</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="title"><span style="color:var(--saffron)">Gallery</span><h2>ছবির ঝলক</h2><i></i></div>
+  <div class="gwrap"><div class="gal" id="gal">
+      <a><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80" alt="" onerror="this.remove()"></a>
+      <a><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="" onerror="this.remove()"></a>
+  </div></div>
+</section>
+
+<section id="contact">
+  <div class="title"><span>Contact</span><h2>যোগাযোগ করুন</h2><i></i></div>
+  <div class="infogrid">
+    <div><b>📍 ঠিকানা</b> জিইসি মোড়, চট্টগ্রাম</div>
+    <div><b>📞 ফোন</b>+880 1XXX-XXXXXX</div>
+    <div><b>✉️ ইমেইল</b>hello@shadghor.com</div>
+    <div><b>🕒 সময়</b>প্রতিদিন সকাল ১১টা – রাত ১১টা</div>
+  </div>
+  <div id="payment">
+    <h3 class="paytitle">Payment Methods</h3>
+   <a> <img src="Screenshot 2026-10-28 015000.png" alt="Paris" class="center">></a>
+  </div>
+</section>
+
+<footer>© 2026 স্বাদ ঘর। সর্বস্বত্ব সংরক্ষিত।</footer>
+
+<script>
+const links=document.getElementById('links');
+document.getElementById('burger').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',t.dataset.f!=='all'&&c.dataset.c!==t.dataset.f));
+});
+
+const secs=[...document.querySelectorAll('section')],as=[...links.querySelectorAll('a')];
+addEventListener('scroll',()=>{
+  let cur=secs[0].id;
+  secs.forEach(s=>{if(scrollY>=s.offsetTop-120)cur=s.id});
+  as.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+});
+
+
+const pays=[["VISA","#1a1f71"],["Master<br>card","#eb001b"],["AMEX","#2e77bb"],["Union<br>Pay","#d7282f"],["Diners","#0079be"],["DBBL<br>Nexus","#2a6e8f"],["Q Cash","#e4002b"],["Taka<br>Pay","#333"],["bKash","#e2136e"],["Nagad","#f26522"],["Rocket","#8c3494"],["tap","#d62828"],["Upay","#1a8f3c"],["OK<br>Wallet","#e8a900"],["mCash","#0a7a3d"],["Islamic<br>Wallet","#2e8b57"],["MyCash","#1b9a4a"],["Meghna<br>Pay","#1a8fd0"],["City<br>Touch","#c8102e"],["CellFin","#1b8a3e"],["EBL<br>SKY","#e6a800"],["Islami<br>Bank","#0a7a3d"],["MTB","#d62828"],["Midland<br>Bank","#d62828"],["My<br>Prime","#0b5fa5"],["Bank<br>Asia","#1c3f94"],["SBL","#1a8fd0"],["FSIBL","#2a6e3f"],["Modhumoti","#2e7d32"],["Dmoney","#8bc34a"],["BDBL","#1b5e3a"],["Meghna<br>Bank","#6a2c91"],["Woori<br>Bank","#0a63b0"],["Citizens<br>Bank","#a00"],["Rainbow","#e67e22"],["iPay","#2a9d8f"],["Dmoney","#f39c12"],["Pocket","#222"]];
+document.getElementById('paygrid').innerHTML=pays.map(p=>`<div class="pt" style="color:${p[1]}">${p[0]}</div>`).join('');
+
+const gal=document.getElementById('gal');let hold=false;
+gal.parentElement.onmouseenter=()=>hold=true;gal.parentElement.onmouseleave=()=>hold=false;
+setInterval(()=>{
+  if(hold)return;
+  const f=gal.firstElementChild,w=f.getBoundingClientRect().width+14;
+  gal.style.transition='transform .7s ease';gal.style.transform=`translateX(-${w}px)`;
+  setTimeout(()=>{gal.style.transition='none';gal.appendChild(f);gal.style.transform='translateX(0)'},720);
+},3000);
+</script>
+</body>
+</html>
